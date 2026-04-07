@@ -2,6 +2,7 @@ import { Link, useLocation } from "react-router-dom";
 import { Moon, Sun, Menu, X } from "lucide-react";
 import { useTheme } from "./ThemeProvider";
 import { useState } from "react";
+import enthalpyrLogo from "@/assets/enthalpyr-logo.png";
 
 const Navbar = () => {
   const { theme, toggleTheme } = useTheme();
@@ -16,7 +17,8 @@ const Navbar = () => {
   return (
     <nav className="sticky top-0 z-50 border-b bg-background/80 backdrop-blur-md">
       <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-3 sm:px-6">
-        <Link to="/" className="text-xl font-bold tracking-tight text-foreground">
+        <Link to="/" className="flex items-center gap-2 text-xl font-bold tracking-tight text-foreground">
+          <img src={enthalpyrLogo} alt="EnthalpyR Logo" className="h-8 w-8" />
           Enthalpy<span className="text-primary">R</span>
         </Link>
 
