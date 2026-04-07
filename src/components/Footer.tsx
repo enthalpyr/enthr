@@ -6,7 +6,7 @@ const Footer = () => (
       <div className="grid gap-8 sm:grid-cols-3">
         <div>
           <h3 className="text-lg font-bold text-foreground">
-            Enthalpy<span className="text-primary">R</span>
+            <span>Enthalpy<span className="text-primary">R</span></span>
           </h3>
           <p className="mt-2 text-sm text-muted-foreground">
             Building useful apps for everyday life.
