@@ -105,7 +105,7 @@ const CashBook = () => {
               className="mt-6 flex flex-wrap justify-center gap-3 md:justify-start"
             >
               <a
-                href="#"
+                href="https://drive.google.com/file/d/1a6OIXsLEMiHQiQfoEWZGvDi_nbBv_Eeq/view?usp=drivesdk"
                 className="inline-flex items-center gap-2 rounded-xl bg-primary px-6 py-3 text-sm font-semibold text-primary-foreground shadow transition-transform hover:scale-105"
               >
                 Get on Google Play <ArrowRight className="h-4 w-4" />
@@ -260,7 +260,7 @@ const CashBook = () => {
         <motion.a
           variants={fadeUp}
           custom={2}
-          href="#"
+          href="https://drive.google.com/file/d/1a6OIXsLEMiHQiQfoEWZGvDi_nbBv_Eeq/view?usp=drivesdk"
           className="mt-6 inline-flex items-center gap-2 rounded-xl bg-primary px-8 py-3 text-sm font-semibold text-primary-foreground shadow transition-transform hover:scale-105"
         >
           Get on Google Play <ArrowRight className="h-4 w-4" />
