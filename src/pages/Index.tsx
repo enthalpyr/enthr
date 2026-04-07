@@ -65,7 +65,7 @@ const Index = () => {
             custom={0}
             className="text-4xl font-extrabold tracking-tight text-foreground sm:text-5xl lg:text-6xl"
           >
-            Enthalpy<span className="text-primary">R</span>
+            <span>Enthalpy<span className="text-primary">R</span></span>
           </motion.h1>
           <motion.p
             variants={fadeUp}

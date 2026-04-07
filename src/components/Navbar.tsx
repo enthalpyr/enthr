@@ -19,7 +19,7 @@ const Navbar = () => {
       <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-3 sm:px-6">
         <Link to="/" className="flex items-center gap-2 text-xl font-bold tracking-tight text-foreground">
           <img src={enthalpyrLogo} alt="EnthalpyR Logo" className="h-8 w-8" />
-          Enthalpy<span className="text-primary">R</span>
+          <span>Enthalpy<span className="text-primary">R</span></span>
         </Link>
 
         {/* Desktop */}
