@@ -55,6 +55,8 @@ const CashBook = () => {
   const [currentSS, setCurrentSS] = useState(0);
   const [direction, setDirection] = useState(0);
 
+  useEffect(() => { setCurrentSS(0); }, [theme]);
+
   const paginate = (newDir: number) => {
     setDirection(newDir);
     setCurrentSS((c) => {
