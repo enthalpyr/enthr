@@ -17,7 +17,8 @@ import ss4 from "@/assets/cashbook-ss-4.png";
 import ss5 from "@/assets/cashbook-ss-5.png";
 import ss6 from "@/assets/cashbook-ss-6.png";
 
-const screenshots = [ss1, ss2, ss3, ss4, ss5, ss6];
+const lightScreenshots = [ss1, ss2, ss3];
+const darkScreenshots = [ss4, ss5, ss6];
 
 const features = [
   { icon: Banknote, title: "All Denominations", desc: "₹500 notes down to ₹1 coins — every Indian denomination covered." },
