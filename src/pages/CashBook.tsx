@@ -6,7 +6,7 @@ import {
 import { motion, AnimatePresence } from "framer-motion";
 import Layout from "@/components/Layout";
 import { useTheme } from "@/components/ThemeProvider";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 import cashbookLogoLight from "@/assets/cashbook-logo-light.png";
 import cashbookLogoDark from "@/assets/cashbook-logo-dark.png";
@@ -17,7 +17,8 @@ import ss4 from "@/assets/cashbook-ss-4.png";
 import ss5 from "@/assets/cashbook-ss-5.png";
 import ss6 from "@/assets/cashbook-ss-6.png";
 
-const screenshots = [ss1, ss2, ss3, ss4, ss5, ss6];
+const lightScreenshots = [ss1, ss2, ss3];
+const darkScreenshots = [ss4, ss5, ss6];
 
 const features = [
   { icon: Banknote, title: "All Denominations", desc: "₹500 notes down to ₹1 coins — every Indian denomination covered." },
@@ -50,8 +51,11 @@ const stagger = {
 
 const CashBook = () => {
   const { theme } = useTheme();
+  const screenshots = theme === "dark" ? darkScreenshots : lightScreenshots;
   const [currentSS, setCurrentSS] = useState(0);
   const [direction, setDirection] = useState(0);
+
+  useEffect(() => { setCurrentSS(0); }, [theme]);
 
   const paginate = (newDir: number) => {
     setDirection(newDir);
