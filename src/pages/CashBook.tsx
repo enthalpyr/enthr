@@ -109,7 +109,7 @@ const CashBook = () => {
               className="mt-6 flex flex-wrap justify-center gap-3 md:justify-start"
             >
               <a
-                href="https://https://github.com/enthalpyr/enthr/cashbook/releases/download/v1.2/CashBook.apk"
+                href="https://github.com/enthalpyr/enthr/releases/latest/download/CashBook.apk"
                 className="inline-flex items-center gap-2 rounded-xl bg-primary px-6 py-3 text-sm font-semibold text-primary-foreground shadow transition-transform hover:scale-105"
               >
                 Download APK <ArrowRight className="h-4 w-4" />
@@ -264,7 +264,7 @@ const CashBook = () => {
         <motion.a
           variants={fadeUp}
           custom={2}
-          href="https://https://github.com/enthalpyr/enthr/cashbook/releases/download/v1.2/CashBook.apk"
+          href="https://github.com/enthalpyr/enthr/releases/latest/download/CashBook.apk"
           className="mt-6 inline-flex items-center gap-2 rounded-xl bg-primary px-8 py-3 text-sm font-semibold text-primary-foreground shadow transition-transform hover:scale-105"
         >
           Download APK <ArrowRight className="h-4 w-4" />
