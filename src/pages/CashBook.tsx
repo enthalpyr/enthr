@@ -6,7 +6,7 @@ import {
 import { motion, AnimatePresence } from "framer-motion";
 import Layout from "@/components/Layout";
 import { useTheme } from "@/components/ThemeProvider";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 import cashbookLogoLight from "@/assets/cashbook-logo-light.png";
 import cashbookLogoDark from "@/assets/cashbook-logo-dark.png";
