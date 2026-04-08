@@ -51,6 +51,7 @@ const stagger = {
 
 const CashBook = () => {
   const { theme } = useTheme();
+  const screenshots = theme === "dark" ? darkScreenshots : lightScreenshots;
   const [currentSS, setCurrentSS] = useState(0);
   const [direction, setDirection] = useState(0);
 
