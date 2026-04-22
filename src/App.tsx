@@ -9,6 +9,10 @@ import CashBook from "./pages/CashBook";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import TermsOfService from "./pages/TermsOfService";
 import DataDeletion from "./pages/DataDeletion";
+import KhataOK from "./pages/KhataOK";
+import KhataOKPrivacyPolicy from "./pages/khataok/PrivacyPolicy";
+import KhataOKTermsOfService from "./pages/khataok/TermsOfService";
+import KhataOKDataDeletion from "./pages/khataok/DataDeletion";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -26,6 +30,10 @@ const App = () => (
             <Route path="/cashbook/privacy" element={<PrivacyPolicy />} />
             <Route path="/cashbook/terms" element={<TermsOfService />} />
             <Route path="/cashbook/data-deletion" element={<DataDeletion />} />
+            <Route path="/khataok" element={<KhataOK />} />
+            <Route path="/khataok/privacy" element={<KhataOKPrivacyPolicy />} />
+            <Route path="/khataok/terms" element={<KhataOKTermsOfService />} />
+            <Route path="/khataok/data-deletion" element={<KhataOKDataDeletion />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </BrowserRouter>

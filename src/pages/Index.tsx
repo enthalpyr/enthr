@@ -10,6 +10,8 @@ import { Button } from "@/components/ui/button";
 import { useToast } from "@/hooks/use-toast";
 import cashbookLogoLight from "@/assets/cashbook-logo-light.png";
 import cashbookLogoDark from "@/assets/cashbook-logo-dark.png";
+import khataokLogoLight from "@/assets/khataok-logo-light.png";
+import khataokLogoDark from "@/assets/khataok-logo-dark.png";
 import enthalpyrLogo from "@/assets/enthalpyr-logo.png";
 
 const fadeUp = {
@@ -118,9 +120,37 @@ const Index = () => {
               </Link>
             </motion.div>
 
+            <motion.div variants={fadeUp} custom={2}>
+              <Link
+                to="/khataok"
+                className="group block rounded-xl border bg-card p-6 shadow-sm transition-all hover:shadow-lg hover:border-primary/30"
+              >
+                <div className="mb-4 flex items-center gap-4">
+                  <img
+                    src={theme === "dark" ? khataokLogoDark : khataokLogoLight}
+                    alt="Khata OK Logo"
+                    className="h-16 w-16 rounded-xl"
+                    loading="lazy"
+                    width={512}
+                    height={512}
+                  />
+                  <div>
+                    <h3 className="text-lg font-bold text-foreground">Khata OK</h3>
+                    <span className="text-xs text-muted-foreground">Coming Soon</span>
+                  </div>
+                </div>
+                <p className="text-sm text-muted-foreground leading-relaxed">
+                  Smart account management app for tracking customer credit & debit khata details. Maintain digital ledgers, share statements, send reminders.
+                </p>
+                <div className="mt-4 flex items-center gap-1 text-sm font-medium text-primary group-hover:gap-2 transition-all">
+                  Learn more <ArrowRight className="h-4 w-4" />
+                </div>
+              </Link>
+            </motion.div>
+
             <motion.div
               variants={fadeUp}
-              custom={2}
+              custom={3}
               className="flex items-center justify-center rounded-xl border border-dashed bg-card/50 p-6 text-center"
             >
               <p className="text-sm text-muted-foreground">More apps coming soon…</p>
